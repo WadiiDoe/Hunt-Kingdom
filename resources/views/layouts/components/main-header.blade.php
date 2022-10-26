@@ -18,7 +18,8 @@
 								<a href="{{url('index')}}"><img src="{{Vite::asset('assets/img/brand/logo-light.png')}}" class="mobile-logo-dark" alt="logo"></a>
 							</div>
 							<div class="input-group">
-								<input type="search" class="form-control rounded-0" placeholder="Search for anything...">
+								<input type="search" class="form-control rounded-0" name="term" id="term" placeholder="Search for anything...">
+								
 								<button class="btn search-btn"><i class="fe fe-search"></i></button>
 							</div>
 						</div>
