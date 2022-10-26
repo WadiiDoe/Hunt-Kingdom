@@ -1,0 +1,255 @@
+{
+  "resources/assets/plugins/gallery/fonts/lg.svg": {
+    "file": "assets/lg.1b604d97.svg",
+    "src": "resources/assets/plugins/gallery/fonts/lg.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.6c202fb2.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/assets/js/advanced-form-elements.js": {
+    "file": "assets/advanced-form-elements.041e75a0.js",
+    "src": "resources/assets/js/advanced-form-elements.js",
+    "isEntry": true
+  },
+  "resources/assets/js/apexcharts.js": {
+    "file": "assets/apexcharts.81355d72.js",
+    "src": "resources/assets/js/apexcharts.js",
+    "isEntry": true
+  },
+  "resources/assets/js/blog-post.js": {
+    "file": "assets/blog-post.b629bdd0.js",
+    "src": "resources/assets/js/blog-post.js",
+    "isEntry": true
+  },
+  "resources/assets/js/calendar.js": {
+    "file": "assets/calendar.7a1b6146.js",
+    "src": "resources/assets/js/calendar.js",
+    "isEntry": true
+  },
+  "resources/assets/js/carousel.js": {
+    "file": "assets/carousel.56664aac.js",
+    "src": "resources/assets/js/carousel.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart-circle.js": {
+    "file": "assets/chart-circle.4d5e1041.js",
+    "src": "resources/assets/js/chart-circle.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart.chartjs.js": {
+    "file": "assets/chart.chartjs.b0872b7a.js",
+    "src": "resources/assets/js/chart.chartjs.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart.echarts.js": {
+    "file": "assets/chart.echarts.87161778.js",
+    "src": "resources/assets/js/chart.echarts.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart.flot.js": {
+    "file": "assets/chart.flot.d2b112c5.js",
+    "src": "resources/assets/js/chart.flot.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart.morris.js": {
+    "file": "assets/chart.morris.ebd6a06d.js",
+    "src": "resources/assets/js/chart.morris.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart.peity.js": {
+    "file": "assets/chart.peity.e4feb6d9.js",
+    "src": "resources/assets/js/chart.peity.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chart.sparkline.js": {
+    "file": "assets/chart.sparkline.601f82ee.js",
+    "src": "resources/assets/js/chart.sparkline.js",
+    "isEntry": true
+  },
+  "resources/assets/js/chat.js": {
+    "file": "assets/chat.a03e65e8.js",
+    "src": "resources/assets/js/chat.js",
+    "isEntry": true
+  },
+  "resources/assets/js/check-all-mail.js": {
+    "file": "assets/check-all-mail.10a336e0.js",
+    "src": "resources/assets/js/check-all-mail.js",
+    "isEntry": true
+  },
+  "resources/assets/js/checkout-jquery-steps.js": {
+    "file": "assets/checkout-jquery-steps.7f7e05ea.js",
+    "src": "resources/assets/js/checkout-jquery-steps.js",
+    "isEntry": true
+  },
+  "resources/assets/js/contacts.js": {
+    "file": "assets/contacts.6229ccf6.js",
+    "src": "resources/assets/js/contacts.js",
+    "isEntry": true
+  },
+  "resources/assets/js/crypto-buysell.js": {
+    "file": "assets/crypto-buysell.7a995d37.js",
+    "src": "resources/assets/js/crypto-buysell.js",
+    "isEntry": true
+  },
+  "resources/assets/js/crypto-dashboard.js": {
+    "file": "assets/crypto-dashboard.c8beb84d.js",
+    "src": "resources/assets/js/crypto-dashboard.js",
+    "isEntry": true,
+    "imports": [
+      "_apexcharts.common.18fe834a.js"
+    ]
+  },
+  "resources/assets/js/crypto-exchange.js": {
+    "file": "assets/crypto-exchange.b8f8fd56.js",
+    "src": "resources/assets/js/crypto-exchange.js",
+    "isEntry": true
+  },
+  "resources/assets/js/crypto-market.js": {
+    "file": "assets/crypto-market.8e6d4b60.js",
+    "src": "resources/assets/js/crypto-market.js",
+    "isEntry": true
+  },
+  "resources/assets/js/crypto-transaction.js": {
+    "file": "assets/crypto-transaction.179e43d1.js",
+    "src": "resources/assets/js/crypto-transaction.js",
+    "isEntry": true
+  },
+  "resources/assets/js/ecommerce-dashboard.js": {
+    "file": "assets/ecommerce-dashboard.c500b3ef.js",
+    "src": "resources/assets/js/ecommerce-dashboard.js",
+    "isEntry": true,
+    "imports": [
+      "_apexcharts.common.18fe834a.js"
+    ]
+  },
+  "resources/assets/js/file-detail.js": {
+    "file": "assets/file-detail.7aeea950.js",
+    "src": "resources/assets/js/file-detail.js",
+    "isEntry": true
+  },
+  "resources/assets/js/form-editor.js": {
+    "file": "assets/form-editor.d6269b76.js",
+    "src": "resources/assets/js/form-editor.js",
+    "isEntry": true
+  },
+  "resources/assets/js/form-elements.js": {
+    "file": "assets/form-elements.e4a3e2d7.js",
+    "src": "resources/assets/js/form-elements.js",
+    "isEntry": true
+  },
+  "resources/assets/js/form-validation.js": {
+    "file": "assets/form-validation.e8f0a85d.js",
+    "src": "resources/assets/js/form-validation.js",
+    "isEntry": true
+  },
+  "resources/assets/js/form-vallidations.js": {
+    "file": "assets/form-vallidations.90ba0dc6.js",
+    "src": "resources/assets/js/form-vallidations.js",
+    "isEntry": true
+  },
+  "resources/assets/js/gallery.js": {
+    "file": "assets/gallery.56d0e319.js",
+    "src": "resources/assets/js/gallery.js",
+    "isEntry": true
+  },
+  "resources/assets/js/generate-otp.js": {
+    "file": "assets/generate-otp.e4c72a37.js",
+    "src": "resources/assets/js/generate-otp.js",
+    "isEntry": true
+  },
+  "resources/assets/js/handleCounter.js": {
+    "file": "assets/handleCounter.a6fa78cd.js",
+    "src": "resources/assets/js/handleCounter.js",
+    "isEntry": true
+  },
+  "resources/assets/js/index.js": {
+    "file": "assets/index.d45bf003.js",
+    "src": "resources/assets/js/index.js",
+    "isEntry": true
+  },
+  "resources/assets/js/mapelmaps.js": {
+    "file": "assets/mapelmaps.cb9855eb.js",
+    "src": "resources/assets/js/mapelmaps.js",
+    "isEntry": true
+  },
+  "resources/assets/js/modal.js": {
+    "file": "assets/modal.2b48e752.js",
+    "src": "resources/assets/js/modal.js",
+    "isEntry": true
+  },
+  "resources/assets/js/picker.js": {
+    "file": "assets/picker.cb8c5ca5.js",
+    "src": "resources/assets/js/picker.js",
+    "isEntry": true
+  },
+  "resources/assets/js/popover.js": {
+    "file": "assets/popover.8e7d1488.js",
+    "src": "resources/assets/js/popover.js",
+    "isEntry": true
+  },
+  "resources/assets/js/select2.js": {
+    "file": "assets/select2.c6fe0495.js",
+    "src": "resources/assets/js/select2.js",
+    "isEntry": true
+  },
+  "resources/assets/js/summernote.js": {
+    "file": "assets/summernote.c84f2e32.js",
+    "src": "resources/assets/js/summernote.js",
+    "isEntry": true
+  },
+  "resources/assets/js/sweet-alert.js": {
+    "file": "assets/sweet-alert.b5ce91f3.js",
+    "src": "resources/assets/js/sweet-alert.js",
+    "isEntry": true
+  },
+  "resources/assets/js/table-data.js": {
+    "file": "assets/table-data.a7b3fed9.js",
+    "src": "resources/assets/js/table-data.js",
+    "isEntry": true
+  },
+  "resources/assets/js/tabs.js": {
+    "file": "assets/tabs.2e0bd6e1.js",
+    "src": "resources/assets/js/tabs.js",
+    "isEntry": true
+  },
+  "resources/assets/js/timline.js": {
+    "file": "assets/timline.de62b49c.js",
+    "src": "resources/assets/js/timline.js",
+    "isEntry": true
+  },
+  "resources/assets/js/tooltip.js": {
+    "file": "assets/tooltip.1129dc47.js",
+    "src": "resources/assets/js/tooltip.js",
+    "isEntry": true
+  },
+  "resources/assets/js/vector-map.js": {
+    "file": "assets/vector-map.0da24b31.js",
+    "src": "resources/assets/js/vector-map.js",
+    "isEntry": true
+  },
+  "resources/assets/js/widgets.js": {
+    "file": "assets/widgets.76795124.js",
+    "src": "resources/assets/js/widgets.js",
+    "isEntry": true
+  },
+  "resources/assets/switcher/js/switcher.js": {
+    "file": "assets/switcher.e3d4733f.js",
+    "src": "resources/assets/switcher/js/switcher.js",
+    "isEntry": true
+  },
+  "_apexcharts.common.18fe834a.js": {
+    "file": "assets/apexcharts.common.18fe834a.js"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.4b443544.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app.dea98502.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  }
+}
