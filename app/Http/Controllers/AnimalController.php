@@ -34,7 +34,18 @@ class AnimalController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate(
+            [
+                'name' => 'required|min:6',
+                'description' => 'required|max:20',
+                'zone' => 'required'
+            ],
 
+            [
+                'name.required' => 'u need to fill the name'
+
+            ]
+        );
         $input = $request->all();
 
         if ($image = $request->file("picture")) {

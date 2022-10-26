@@ -56,7 +56,7 @@
                         <tr>
 
 							
-                            <th> <img src="{{ url('public/images/'.$animal->picture) }}"style="height: 100px; width: 150px;"></th>
+                            <th> <img src="C:\Users\ahmed\Documents\dogg.jpg"style="height: 100px; width: 150px;"></th>
                             <th>{{$animal->name}}</th>
                             <th>{{$animal->description}}</th>
                             <th>{{$animal->zone}}</th>

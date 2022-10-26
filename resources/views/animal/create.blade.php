@@ -48,24 +48,36 @@
                     @csrf
                     <div class="form-group">
                        
-                        <input type="texte" class="form-control" id="name"placeholder="Animal Name" name="name" required="true" minlength="6">
+                        <input type="texte" class="form-control" id="name"placeholder="Animal Name" name="name"  minlength="6">
 
                     </div>
-                    
+                    <span style="color:red">
+                @error('name') 
+                {{$message}}
+                @enderror
+                </span>
                     <div class="form-group">
                        
-                        <textarea class="form-control" id="description" rows="3" name="description"  required="true" placeholder="You can write your description here"></textarea>
+                        <textarea class="form-control" id="description" rows="3" name="description"   placeholder="You can write your description here"></textarea>
 
                     </div>
-
+                <span style="color:red">    
+                @error('description') 
+                {{$message}}
+                @enderror
+                </span>
                     <div class="form-group">
                       
-                        <input type="texte" required="true" class="form-control" id="zone" name="zone" placeholder="Animal Zone HERE">
+                        <input type="texte"  class="form-control" id="zone" name="zone" placeholder="Animal Zone HERE">
 
                     </div>
-
+                    <span style="color:red">
+                @error('zone') 
+                {{$message}}
+                @enderror
+                </span>
                  
-                    
+
                  
 													<select name="category_id" class="form-control form-select select2" data-bs-placeholder="Select Category">
 														 @foreach($categories as $category)

@@ -55,6 +55,8 @@
                 <div class="main-container container-fluid">
                     <div class="inner-body">
                         @yield('content')
+
+                        calendar
                     </div>
                 </div>
             </div>

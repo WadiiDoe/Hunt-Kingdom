@@ -47,7 +47,7 @@
             <!-- END MAIN-HEADER -->
 
             <!-- MAIN-SIDEBAR -->
-            @include('layouts.components.main-sidebar')
+           
             <!-- END MAIN-SIDEBAR -->
 
             <!-- MAIN-CONTENT -->
@@ -56,6 +56,8 @@
                     <div class="inner-body">
                         @yield('content')
                         Welcome : {{ auth()->user()->name }}
+
+                        
                     </div>
                 </div>
             </div>
