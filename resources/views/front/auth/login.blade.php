@@ -30,10 +30,10 @@
                             <div class="row row-sm">
                                 <div class="card-body mt-2 mb-2">
                                     <div class="mobilelogo">
-                                        <img src="{{ asset('build/assets/img/brand/logo.png') }}"
+                                        <img src="{{ Vite::asset('assets/img/brand/logo.png') }}"
                                             class=" d-lg-none header-brand-img text-start float-start mb-4 dark-logo"
                                             alt="logo">
-                                        <img src="{{ asset('build/assets/img/brand/logo-light.png') }}"
+                                        <img src="{{ Vite::asset('assets/img/brand/logo-light.png') }}"
                                             class=" d-lg-none header-brand-img text-start float-start mb-4 light-logo"
                                             alt="logo">
                                     </div>
@@ -73,10 +73,19 @@
                                                                 autocomplete="new-password" data-bs-toggle="password"
                                                                 id="password" name="password">
                                                         </div>
-                                                        <!-- <a class="btn btn-primary btn-block" href="{{ url('index') }}">  {{ __('Log in') }}</a> -->
-                                                        <button type="submit" class="ml-3">
+                                                        
+                                                        <button type="submit" class="btn btn-primary btn-block">
                                                             {{ __('Log in') }}
                                                         </button>
+                                                        @if (count($errors) > 0)
+                                                            <p class="text-danger">
+                                                                @foreach ($errors->all() as $error)
+                                                                    {{ $error }}
+                                                                    <br>
+                                                                @endforeach
+                                                            </p>
+                                                        @endif
+
                                                     </div>
                                                     <div class="tab-pane" id="tab02">
                                                         <div id="mobile-num" class="validate-input input-group mb-2">
@@ -107,19 +116,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="flex items-center justify-end mt-4">
-                                            @if (Route::has('password.request'))
-                                                <a class="underline text-sm text-gray-600 hover:text-gray-900"
-                                                    href="{{ route('password.request') }}">
-                                                    {{ __('Forgot your password?') }}
-                                                </a>
-                                            @endif
-
-
-                                        </div>
+                                        
                                     </form>
                                     <div class="text-start mt-4 ms-0 mb-3">
-                                        <div class="mb-1"><a href="{{ url('forgot') }}">Forgot password?</a></div>
+                                        
                                         <div>Don't have an account? <a href="{{ url('signup') }}">Register Here</a>
                                         </div>
                                     </div>
@@ -145,14 +145,14 @@
                     </div>
                     <div class="col-lg-6 col-xl-6 d-none d-lg-block text-center bg-primary details rounded-end-11">
                         <div class="mt-4 pt-4 p-2 pos-relative">
-                            <img src="{{ asset('build/assets/img/brand/logo-light.png') }}"
+                            <img src="{{ Vite::asset('assets/img/brand/logo-light.png') }}"
                                 class="header-brand-img mb-3 mt-3" alt="logo">
                             <div class="clearfix"></div>
-                            <img src="{{ asset('build/assets/img/pngs/user.png') }}" class="ht-250 mb-0"
+                            <img src="{{ Vite::asset('assets/img/pngs/user.png') }}" class="ht-250 mb-0"
                                 alt="user">
                             <h2 class="mt-4 text-white tx-normal">Sign In Your Account</h2>
                             <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Sign in to Create, Discover and Connect with
-                                the Global Community</span>
+                                the Hunting Community</span>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
 
     @section('scripts')
         <!-- BOOTSTRAP SHOW PASSWORD JS -->
-        <script src="{{ asset('build/assets/plugins/bootstrap/js/bootstrap-show-password.min.js') }}"></script>
+        <script src="{{ Vite::asset('assets/plugins/bootstrap/js/bootstrap-show-password.min.js') }}"></script>
 
         <!-- GENERATE-OTP JS -->
         @vite('resources/assets/js/generate-otp.js')
