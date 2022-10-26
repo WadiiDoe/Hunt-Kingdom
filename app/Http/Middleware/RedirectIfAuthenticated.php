@@ -13,20 +13,17 @@ class RedirectIfAuthenticated
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @param  string|null  ...$guards
-     * @return mixed
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
     public function handle(Request $request, Closure $next, ...$guards)
     {
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
-            if($guard == 'front' && Auth::guard($guard)->check()){
-                return redirect(RouteServiceProvider::HOME);
-            }
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::ADMIN_HOME);
+                return redirect(RouteServiceProvider::HOME);
             }
         }
 

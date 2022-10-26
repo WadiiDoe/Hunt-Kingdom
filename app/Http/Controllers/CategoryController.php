@@ -1,33 +1,22 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Category;
-
+use App\Models\category;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-
-
-class categoryController extends Controller
+class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $categorys = Category::all();
-        $project = Category::query();
+        $categorys = category::all();
+        
 
 
-        if (!empty(request('term'))) {
-            $project->where('name', 'Like', '%' . request('term') . '%')->orderBy('id', 'DESC')->paginate(15);
-            //$project = $project->orderBy('id', 'DESC')->paginate(15);
-        }
+        
 
 
-        return view('category.index', compact('categorys', 'project'));
+        return view('category.index', compact('categorys'));
     }
 
     /**
@@ -37,10 +26,10 @@ class categoryController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();
+        $categorys = category::all();
 
         return view('category.create', compact(
-            'categories'
+            'categorys'
 
         ));
     }
@@ -62,13 +51,7 @@ class categoryController extends Controller
 
         $category = category::create($request->all());
 
-        /*$category = new category([
-            "name" => $request->get('name'),
-            "description" => $request->get('description'),
-            "price" => $request->get('price'),
-            "stock" => $request->get('stock'),
-        ]);*/
-
+      
         $category->category_id  = $request->category_id;
 
 
@@ -81,10 +64,10 @@ class categoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(category $category)
+    public function show(category $id)
     {
-        //$category = category::find($id) ; on utilise si paramètre est id fonctionnel
-        return view('category.show', compact('category'));
+        $categor = category::find($id) ;
+        return view('category.show', compact('categor'));
     }
 
     /**
@@ -93,9 +76,9 @@ class categoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(category $category)
+    public function edit(category $id)
     {
-
+        $category = category::find($id) ;
         return view('category.edit', compact('category'));
     }
 

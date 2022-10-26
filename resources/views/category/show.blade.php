@@ -9,7 +9,7 @@
 
 <div class="page-header">
 							<div>
-								<h2 class="main-content-title tx-24 mg-b-5">{{$category->name}}</h2>
+								<h2 class="main-content-title tx-24 mg-b-5">{{$categor->id}}</h2>
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="javascript:;">Utilities</a></li>
 									<li class="breadcrumb-item active" aria-current="page">Display</li>
@@ -50,7 +50,7 @@
 												<tbody>
 													<tr>
 														<td><code>category Name :</code></td>
-														<td>{{ $category->name }}</td>
+														<td>{{ $categor->name }}</td>
 													</tr>
 											
 												</tbody>

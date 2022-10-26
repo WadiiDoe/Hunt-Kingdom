@@ -46,10 +46,7 @@
             @include('layouts.components.main-header')
             <!-- END MAIN-HEADER -->
 
-            <!-- MAIN-SIDEBAR -->
-            @include('layouts.components.main-sidebar')
-            <!-- END MAIN-SIDEBAR -->
-
+           
             <!-- MAIN-CONTENT -->
             <div class="main-content side-content pt-0">
                 <div class="main-container container-fluid">
@@ -60,17 +57,14 @@
             </div>
             <!-- END MAIN-CONTENT -->
 
-            <!-- MAIN-FOOTER -->
-            @include('layouts.components.main-footer')
-            <!-- END MAIN-FOOTER -->
-
+           
 
             <!-- RIGHT-SIDEBAR -->
             @include('layouts.components.right-sidebar')
            <!-- END RIGHT-SIDEBAR -->
 
 
-            
+           
 
 		</div>
         <!-- END PAGE-->
