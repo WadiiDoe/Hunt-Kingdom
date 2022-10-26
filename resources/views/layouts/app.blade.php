@@ -13,7 +13,7 @@
 		@vite(['assets/img/brand/favicon.ico'])
    
 		<!-- TITLE -->
-		<title> Dashplex - Laravel Bootstrap5 Premium Dashboard Template</title>
+		<title> HuntKingdom</title>
 
         <!-- BOOTSTRAP CSS -->
         @vite(['assets/plugins/bootstrap/css/bootstrap.min.css'])
@@ -54,7 +54,9 @@
             <div class="main-content side-content pt-0">
                 <div class="main-container container-fluid">
                     <div class="inner-body">
-                        @yield('content')
+                     
+                       @yield('content')
+                         
                     </div>
                 </div>
             </div>

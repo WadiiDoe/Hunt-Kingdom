@@ -18,7 +18,8 @@
 								<a href="{{url('index')}}"><img src="{{Vite::asset('assets/img/brand/logo-light.png')}}" class="mobile-logo-dark" alt="logo"></a>
 							</div>
 							<div class="input-group">
-								<input type="search" class="form-control rounded-0" placeholder="Search for anything...">
+								<input type="search" class="form-control rounded-0" name="term" id="term" placeholder="Search for anything...">
+								
 								<button class="btn search-btn"><i class="fe fe-search"></i></button>
 							</div>
 						</div>
@@ -225,27 +226,23 @@
 													<img alt="avatar" src="{{Vite::asset('assets/img/users/6.jpg')}}">
 												</span>
 											</a>
+											@if (Auth::check())
 											<div class="dropdown-menu">
 												<div class="header-navheading">
-													<h6 class="main-notification-title">Dennis Mark</h6>
-													<p class="main-notification-text">Web Designer</p>
+													<h6 class="main-notification-title">{{ Auth::user()->name }}</h6>											
 												</div>
-												<a class="dropdown-item border-top" href="{{url('profile')}}">
-													<i class="fe fe-user"></i> My Profile
-												</a>
-												<a class="dropdown-item" href="{{url('profile')}}">
-													<i class="fe fe-edit"></i> Edit Profile
-												</a>
-												<a class="dropdown-item" href="{{url('profile')}}">
-													<i class="fe fe-settings"></i> Account Settings
-												</a>
-												<a class="dropdown-item" href="{{url('profile')}}">
-													<i class="fe fe-compass"></i> Activity
-												</a>
-												<a class="dropdown-item" href="{{url('signin')}}">
+												
+				
+													<form method="POST" action="{{ route('admin.logout') }}">
+													@csrf
+												<a class="dropdown-item" href="{{ route('admin.logout') }}" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
 													<i class="fe fe-power"></i> Sign Out
 												</a>
+												</form>
 											</div>
+											@endif
+
 										</div><!-- profile -->
 										<div class="dropdown d-flex header-settings">
 											<a href="javascript:void(0);" class="nav-link icon" data-bs-toggle="sidebar-right" data-bs-target=".sidebar-right">

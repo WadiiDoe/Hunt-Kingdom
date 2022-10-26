@@ -27,6 +27,40 @@
 											<li class="nav-sub-item">
 												<a class="nav-sub-link" href="{{url('dashboard-2')}}">List reservations</a>
 											</li>
+											<span class="sidemenu-label">Animal Dashboaed</span>
+											<i class="angle fe fe-chevron-right"></i>
+										</a>
+										<ul class="nav-sub">
+											<li class="side-menu-label1"><a href="/animal">Animal Dashboaed</a></li>
+											<li class="nav-sub-item">
+												<a class="nav-sub-link" href="{{url('animal')}}">Animal list</a>
+											<span class="sidemenu-label">User</span>
+											<i class="angle fe fe-chevron-right"></i>
+										</a>
+										<ul class="nav-sub">
+											<li class="side-menu-label1"><a href="javascript:void(0);">Users</a></li>
+											
+											<li class="nav-sub-item">
+												@canany('User access','User add','User edit','User delete')
+													<a class="nav-sub-link" href="/admin/users">Users list</a>
+													@endcanany
+												</li>
+											<li class="nav-sub-item">
+											@canany('Role access','Role add','Role edit','Role delete')
+												<a class="nav-sub-link" href="{{ route('admin.roles.index') }}">Roles</a>
+												@endcanany
+
+											</li>
+											
+
+											
+											<li class="nav-sub-item">
+											@canany('Permission access','Permission add','Permission edit','Permission delete')
+												<a class="nav-sub-link" href="{{ route('admin.permissions.index') }}">Permission</a>
+												@endcanany
+											</li>
+										</ul>
+									
 										</ul>
 									</li>
 									
