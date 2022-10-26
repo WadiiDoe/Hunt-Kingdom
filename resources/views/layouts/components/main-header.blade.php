@@ -242,9 +242,14 @@
 												<a class="dropdown-item" href="{{url('profile')}}">
 													<i class="fe fe-compass"></i> Activity
 												</a>
-												<a class="dropdown-item" href="{{url('signin')}}">
+				
+													<form method="POST" action="{{ route('admin.logout') }}">
+													@csrf
+												<a class="dropdown-item" href="{{ route('admin.logout') }}" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
 													<i class="fe fe-power"></i> Sign Out
 												</a>
+												</form>
 											</div>
 										</div><!-- profile -->
 										<div class="dropdown d-flex header-settings">
